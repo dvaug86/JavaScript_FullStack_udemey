@@ -12,10 +12,51 @@
       body {
         font-family: "Sono", sans-serif;
       }
+.pricing-container{
+display: flex;
+gap: 2rem;
+height: 100vh; 
+/* we use 100vh the pricing container stretches from top to bottom  but keeps the pricing plan box in the ceter. */
+justify-content: center;
+align-items: center;
+}
 
+.pricing-plan{
+  background-color: aqua;
+  flex: 1;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.plan-title{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.plan-price{
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.plan-features{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.plan-features li{
+  margin-bottom: 20px;
+}
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
+        .pricing-container{
+          flex-direction: column;
+          height: 100%;
+        }
       }
+
+      
     </style>
   </head>
 

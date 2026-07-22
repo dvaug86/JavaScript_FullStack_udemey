@@ -66,6 +66,12 @@
       padding: 20px;
       border: 2px solid goldenrod;
     }
+    .grid-container {
+  display: grid;
+grid-template-columns: auto 400px minmax(200px, 500px); 
+grid-template-rows: 1fr 1fr 2fr;
+grid-auto-rows: 50px;
+}
   </style>
 </head>
 
@@ -98,13 +104,8 @@
   <textarea id="user-css" placeholder="Write your CSS code here..." rows="25">
 /* Write your CSS code below to make the purple items size, grow and shrink like the green ones.*/
 
-.grid-container {
-  display: grid;
-grid-template-columns: auto 400px minmax(200px, 500px); 
-grid-template-rows: 1fr 1fr 2fr;
-grid-auto-rows: 50px;
-}
-  
+
+ 
   </textarea>
   <button onclick="applyUserCss()">Apply CSS</button>
 

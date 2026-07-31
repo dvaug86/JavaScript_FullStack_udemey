@@ -33,14 +33,24 @@
     .cowboy {
       background-color: #00B9FF;
       grid-column: span 2;
+
     }
 
     .astronaut {
       background-color: #03989E;
       order: 1;
+      /* grid-column: span 2; */
+      /* aanother approach is below */
+      /* grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3; */
+      /* final short had way for the start and end of columns and row is 
+      grid-area: row start / column start /row end /column end
+       */
 
       /* TODO: Make the astronaut box look like the goal2 image. */
-
+      grid-area: 2/1/3/3 ;
     }
   </style>
 </head>

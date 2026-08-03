@@ -1,25 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             padding: 0;
             margin: 0;
+
         }
-        .container{
-            width: 700;
-            height: 438;
+
+        .container {
+            width: 680px;
+            height: 458px;
+            display: grid;
+            grid-template-columns: repeat(14, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            gap: 9px;
+            background-color: #000;
+            border: 10px;
+            border-color: black;
+            border-style: solid;
+        }
+
+        .white {
+            background-color: white;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .b1 {
+            grid-area: 1 / 1/ 2 /3;
+        }
+
+        .b2 {
+            grid-area: 1 / span 3;
+        }
+
+        .b3 {
+            grid-area: 1 / 6 / 2 / 8;
+        }
+
+        .b4 {
+            grid-area: 1 / 8 / 3 /10;
+        }
+
+        .b5 {
+            grid-area: 1 /10 / 2/ 11;
+        }
+
+        .b6 {
+            grid-area: 1/ 11 / 2 /12;
+        }
+
+        .b7 {
+            grid-area: 1 / 12 / 2 /15;
+        }
+
+        .b8 {
+            grid-area: 2 / 1/ 4 /2;
+        }
+
+        .b9 {
+            grid-area: 2 / 2 / 6 / 6;
+        }
+
+        .b10 {
+            grid-area: 2 / 6 /4 /8;
+        }
+
+        .b11 {
+            grid-area: 2 / 10 / 3 / 12;
+        }
+
+        .b12 {
+            grid-area: 2 / 12 / 4 /14;
+        }
+
+        .b13 {
+            grid-area: 2 / 14 / 5 / 15
+        }
+
+        .b14 {
+            grid-area: 3 / 8 / 5 / 10;
+        }
+
+        .b15 {
+            grid-area: 3/ 10 /4 / 12;
+        }
+
+        .b16 {
+            grid-area: 4 / 1 / 7 /2;
+        }
+
+        .b17 {
+            grid-area: 4 / 6 / 6 / 7;
+        }
+
+        .b18 {
+            grid-area: 4 / 7/ 6 /8;
+        }
+
+        .b19 {
+            grid-area: 4 / 10 / 5 /12;
+        }
+
+        .b20 {
+            grid-area: 4 / 12 /6 /14;
+        }
+
+        .b21 {
+            grid-area: 5 / 8 / 6 / 10;
+        }
+
+        .b22 {
+            grid-area: 5 / 10 / 6 / 12;
+        }
+
+        .b23 {
+            grid-area: 5 / 14 / 8 / 15;
+        }
+
+        .b24 {
+            grid-area: 6 /2 / 8 / 4;
+        }
+
+        .b25 {
+            grid-area: 6 / 4 / 7 / 6;
+        }
+
+        .b26 {
+            grid-area: 6 / 6 / 7 / 8;
+        }
+
+        .b27 {
+            grid-area: 6 / 8 / 8 / 9;
+        }
+
+        .b28 {
+            grid-area: 6 / 9 / 8 / 10;
+        }
+
+        .b29 {
+            grid-area: 6 / 10 / 10 / 14;
+        }
+
+        .b30 {
+            grid-area: 7 / 1 / 10 / 2;
+        }
+
+        .b31 {
+            grid-area: 7 / 4 / 8 / 6;
+        }
+
+        .b32 {
+            grid-area: 7 / 6 / 9 / 8;
+        }
+
+        .b33 {
+            grid-area: 8 / 2 / 10 / 4;
+        }
+
+        .b34 {
+            grid-area: 8/ 4 / 9 / 6;
+        }
+
+        .b35 {
+            grid-area: 8 / 8 / 10 / 10;
+        }
+
+        .b36 {
+            grid-area: 8 / 14 / 10 / 15;
+        }
+
+        .b37 {
+            grid-area: 9 / 4 / 11 / 5;
+        }
+
+        .b38 {
+            grid-area: 9 / 5 / 11 / 6;
+        }
+
+        .b39 {
+            grid-area: 9 / 6 / 11/ 8;
+        }
+
+        .b40 {
+            grid-area: 10 / 1 / 11 / 4;
+        }
+
+        .b41 {
+            grid-area: 10 / 8 / 11/ 9;
+        }
+
+        .b42 {
+            grid-area: 10 / 9 / 11/ 10;
+        }
+
+        .b43 {
+            grid-area: 10 / 10 / 11/ 13;
+        }
+
+        .b44 {
+            grid-area: 10 / 13 / 11 / 15;
         }
     </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="b1 white"></div>
+        <div class="b2 white"></div>
+        <div class="b3 yellow"></div>
+        <div class="b4 blue"></div>
+        <div class="b5 yellow"></div>
+        <div class="b6 black"></div>
+        <div class="b7 white"></div>
+        <div class="b8 white"></div>
+        <div class="b9 red"></div>
+        <div class="b10 yellow"></div>
+        <div class="b11 yellow"></div>
+        <div class="b12 white"></div>
+        <div class="b13 yellow"></div>
+        <div class="b14 red"></div>
+        <div class="b15 black"></div>
+        <div class="b16 white"></div>
+        <div class="b17 white"></div>
+        <div class="b18 white"></div>
+        <div class="b19 white"></div>
+        <div class="b20 black"></div>
+        <div class="b21 white"></div>
+        <div class="b22 white"></div>
+        <div class="b23 white"></div>
+        <div class="b24 black"></div>
+        <div class="b25 white"></div>
+        <div class="b26 white"></div>
+        <div class="b27 white"></div>
+        <div class="b28 white"></div>
+        <div class="b29 blue"></div>
+        <div class="b30 yellow"></div>
+        <div class="b31 white"></div>
+        <div class="b32 blue"></div>
+        <div class="b33 white"></div>
+        <div class="b34 black"></div>
+        <div class="b35 yellow"></div>
+        <div class="b36 white"></div>
+        <div class="b37 yellow"></div>
+        <div class="b38 white"></div>
+        <div class="b39 red"></div>
+        <div class="b40 white"></div>
+        <div class="b41 white"></div>
+        <div class="b42 black"></div>
+        <div class="b43 white"></div>
+        <div class="b44 white"></div>
+
+    </div>
 </body>
+
 </html>

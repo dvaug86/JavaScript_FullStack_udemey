@@ -1,0 +1,1 @@
+Starting the Javascript portion of the program. There is a lot of lecture material before I can start coding again.

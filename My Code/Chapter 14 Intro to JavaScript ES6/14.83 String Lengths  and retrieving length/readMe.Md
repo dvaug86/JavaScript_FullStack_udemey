@@ -1,0 +1,1 @@
+I can not remember/ have not learned in this class how to connnect a js file to an html file. this is what i used in  dev tools and it worked.
